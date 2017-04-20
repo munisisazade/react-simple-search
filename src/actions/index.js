@@ -2,5 +2,9 @@
  * Created by munis on 4/20/17.
  */
 export function selectBook(book) {
-    console.log('A book selected:', book.title);
+
+    return {
+        type:'BOOK_SELECTED',
+        payload: book
+    }
 }
